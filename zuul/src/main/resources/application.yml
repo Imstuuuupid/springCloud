@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: cloud-zuul
+
+server:
+  port: 8099
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+
+
+#zuul:
+#  routes:
+#    product1:
+#      path: /prod1/**
+#      serviceId: provide-01
+#    product2:
+#      path: /prod2/**
+#      serviceId: provide-02
+#    product:
+#      path: /cloud/**
+#      serviceId: provide
+
